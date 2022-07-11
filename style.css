@@ -125,6 +125,7 @@ img {
     flex-direction: column;
     width: 25%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .f-1 li, .f-2 li, .f-3 li {
@@ -136,9 +137,17 @@ img {
     font-size: 0.99rem;
 }
 
+.footer-info {
+    display: flex;
+    width: 75%;
+}
+
+.name-logo img {
+    height: 50px;
+    width: 50px;
+}
 
 @media screen and (max-width: 1072px){
-    
     
     img {
         height: 500px;
@@ -177,6 +186,20 @@ img {
     .footer {
         position: absolute;
         left:0;
-        top: 700rem;
+        top: 290rem;
+        height: 500px;
+        flex-wrap: wrap;
+    }
+
+    .f-1 h5, .f-2 h5, .f-3 h5 {
+        font-size: 0.7rem;
+    }
+    .f-1 a, .f-2 a, .f-3 a {
+        font-size: 0.7rem;
+    }
+
+    .name-logo img {
+        height: 30px;
+        width: 30px;
     }
 }
