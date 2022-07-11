@@ -1,3 +1,7 @@
+html {
+   max-width: 100%;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -8,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
 
 .heading {
@@ -93,7 +98,44 @@ img {
     flex-direction: row;
     justify-content: space-around;
     margin: 1.3rem 1.1rem;
+    flex-wrap: wrap;
 }
+
+.footer {
+    height: 1600px;
+    width:100%;
+    background-color: #ffafb6;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+.name-logo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.f-1, .f-2, .f-3 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.f-1 li, .f-2 li, .f-3 li {
+    list-style-type: none;
+}
+.f-1 a, .f-2 a, .f-3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.99rem;
+}
+
 
 @media screen and (max-width: 1072px){
     
@@ -106,10 +148,16 @@ img {
 
 @media screen and (max-width: 600px){
     
+    body {
+        width: 100vw;
+        max-width: 100%;
+    }
     .side-navigation {
         flex-direction: column;
     }
-
+    .heading {
+        width: 100%;
+    }
     img {
         height: 400px;
         width: 80%;
@@ -118,5 +166,17 @@ img {
     .cards {
         justify-content: center;
         width: 80%;
+    }
+    
+    .end-block {
+        position: absolute;
+        left: 0;
+        top: 230rem;
+    }
+
+    .footer {
+        position: absolute;
+        left:0;
+        top: 700rem;
     }
 }
